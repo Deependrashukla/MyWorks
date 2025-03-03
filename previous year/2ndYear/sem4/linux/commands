@@ -1,0 +1,37 @@
+pwd: path for present working directory 
+ls:
+mkdir: make a directory(folder) in current directory ex: mkdir newFolder
+cd .. : go back on parent directory
+vim class_name.java : to create class of java extension
+vim file.txt
+javac className.java
+java mainclass
+cat mainclass.java
+vim myshell.sh
+sh myshell.sh
+vim deep.py 
+python3 deep.py
+mv hello.py hello.py1
+mv *.py python/
+rm file.txt
+cd ../
+cp : copy paste  ex: cp 5*9.txt
+cd ../dirName : to go in dirName, present in parnt dir of current dir
+
+
+
+
+
+
+
+
+
+
+
+########  COS COMMANDS ###########
+
+iverilog filename.java -o outputFileName.vvp
+gtkwave outputFileName.vcd
+vvp output.vvp
+
+

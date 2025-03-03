@@ -1,0 +1,128 @@
+/* src/components/Login.css */
+
+/* Global Styles for the Login Section */
+.login-section {
+    background-color: #f0f4f8;
+    padding: 2.5rem;
+    margin: 2rem auto;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Login Title */
+  .login-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Login Form */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* Label Styles */
+  .login-label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 500;
+  }
+  
+  /* Input Fields */
+  .login-input {
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .login-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: #e74c3c;
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
+  
+  /* Buttons Container */
+  .login-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  /* Login Button */
+  .login-button {
+    flex: 1;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .login-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  /* Register Button */
+  .register-button {
+    flex: 1;
+    padding: 0.75rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .register-button:hover {
+    background-color: #1e7e34;
+  }
+  
+  .register-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 500px) {
+    .login-section {
+      padding: 2rem 1.5rem;
+      margin: 1rem;
+    }
+  
+    .login-title {
+      font-size: 1.75rem;
+    }
+  
+    .login-button,
+    .register-button {
+      font-size: 0.95rem;
+      padding: 0.65rem;
+    }
+  }
+  

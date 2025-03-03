@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Celebration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ff1493;
+            margin-top: 50px;
+        }
+
+        .birthday-message {
+            font-size: 2rem;
+            color: #333;
+            display: none; /* Hidden by default */
+            margin-top: 20px;
+        }
+
+        .celebration-link {
+            font-size: 1.5rem;
+            color: #007bff;
+            text-decoration: none;
+            cursor: pointer;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .celebration-link:hover {
+            color: #ff1493;
+        }
+
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #ff1493;
+            animation: fall 3s linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-100px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hii Ankita Pancholi..</h1>
+
+    <a class="celebration-link" onclick="celebrateBirthday()">Please Click here !</a>
+
+    <div class="birthday-message" id="birthdayMessage">
+        <h1>🎉 Wishing you the best Celebration! 🎉</h1>
+        <h1>🎉 Happy Birthday Ankuuuu.....! 🎉</h1>
+                      🎂🎂🎂
+    </div>
+
+    <script>
+        function celebrateBirthday() {
+            // Show the birthday message
+            const message = document.getElementById('birthdayMessage');
+            message.style.display = 'block';
+
+            // Create confetti effect
+            for (let i = 0; i < 100; i++) {
+                createConfetti();
+            }
+        }
+
+        function createConfetti() {
+            const confetti = document.createElement('div');
+            confetti.classList.add('confetti');
+            document.body.appendChild(confetti);
+
+            // Randomize confetti position and colors
+            confetti.style.left = Math.random() * window.innerWidth + 'px';
+            confetti.style.backgroundColor = getRandomColor();
+            confetti.style.animationDuration = Math.random() * 3 + 2 + 's';
+
+            // Remove confetti after animation
+            setTimeout(() => confetti.remove(), 5000);
+        }
+
+        function getRandomColor() {
+            const colors = ['#ff1493', '#ff6347', '#32cd32', '#1e90ff', '#ffa500', '#9400d3'];
+            return colors[Math.floor(Math.random() * colors.length)];
+        }
+    </script>
+
+</body>
+</html>

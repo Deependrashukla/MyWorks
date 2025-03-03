@@ -1,0 +1,1 @@
+so to achive assign, indicate that it is the total number of words in the file. The wordFrequency variable in the `printWordFrequency

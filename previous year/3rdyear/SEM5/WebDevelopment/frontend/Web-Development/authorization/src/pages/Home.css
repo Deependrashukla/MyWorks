@@ -1,0 +1,139 @@
+/* src/components/Home.css */
+
+/* Global Styles for Sections */
+.submit-idea-section,
+.ideas-section,
+.login-prompt-section {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-prompt-section {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Form Styles */
+.submit-idea-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input,
+.form-textarea {
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.error-message {
+  color: #e74c3c;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Submit Button Styles */
+.submit-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: flex-start;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.submit-button:disabled {
+  background-color: #a0c5f1;
+  cursor: not-allowed;
+}
+
+/* Ideas List Styles */
+.ideas-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.idea-item {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #007BFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.idea-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.idea-title {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.idea-description {
+  margin: 0 0 1rem 0;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Remove Button Styles */
+.remove-button {
+  padding: 0.5rem 1rem;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.remove-button:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .submit-idea-section,
+  .ideas-section,
+  .login-prompt-section {
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+
+  .submit-button,
+  .remove-button {
+    width: 100%;
+    text-align: center;
+  }
+}
