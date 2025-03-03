@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../ml/assignments/assignment2/ml_bow_assignment/ml_bow_assignment"
+		},
+		{
+			"path": "../seir"
+		}
+	],
+	"settings": {
+		"java.project.explorer.showNonJavaResources": false
+	}
+}

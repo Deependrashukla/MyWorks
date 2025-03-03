@@ -1,0 +1,46 @@
+/* Styles for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+  }
+  
+  .navbar-brand {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-user {
+    color: white;
+    margin-right: 1rem;
+  }
+  
+  .navbar-logout-btn,
+  .navbar-login-btn {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .navbar-logout-btn:hover,
+  .navbar-login-btn:hover {
+    background-color: #e64a19;
+  }
+  
+  .navbar-logout-btn:focus,
+  .navbar-login-btn:focus {
+    outline: none;
+  }
+  

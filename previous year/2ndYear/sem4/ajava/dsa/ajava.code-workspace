@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../adsa"
+		}
+	],
+	"settings": {
+		"java.project.explorer.showNonJavaResources": true,
+		"java.dependency.packagePresentation": "hierarchical",
+		"java.dependency.syncWithFolderExplorer": false,
+		"explorer.compactFolders": true
+	}
+}

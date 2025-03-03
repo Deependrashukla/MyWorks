@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "../dsa"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"java.debug.settings.onBuildFailureProceed": true,
+		"java.dependency.packagePresentation": "hierarchical",
+		"java.dependency.syncWithFolderExplorer": true
+	}
+}
