@@ -1,0 +1,74 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "### Most Important Features\n\n#### Teacher Features\n- AI assisted quiz generation\n- AI assisted automatic grading\n- AI assisted customized question repository\n- AI-enhanced anti-plagiarism features\n- Reports\n\n#### Student Features\n- Personalized feedback for students\n- Anti-plagiarism\n- Mobile phone support\n\n#### Admin/Dean Features\n- Summary reports\n- Analytics on student performance\n- Teacher activity analytics and reporting\n\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### User Collection"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "user_example = {\n    \"_id\": ObjectId(\"64a7...\"),\n    \"user_id\": 123,\n    \"name\": \"Vinod Sharma\",\n    \"email\": \"vinod@example.com\",\n    \"password_hash\": \"hashed_password\",\n    \"created_at\": ISODate(\"2024-02-22T10:00:00Z\"),\n    \"quizzes_attempted\": [\n      { \"quiz_id\": 1234, \"score\": 85, \"attempted_on\": ISODate(\"2024-02-20T14:30:00Z\") }\n    ]\n  }"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Question Collection"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "question_example = {\n    \"_id\": ObjectId(\"64a9...\"),\n    \"question_id\": 7123,\n    \"quiz_id\": 1234,\n    \"text\": \"What does 'const' mean in JavaScript?\",\n    \"type\": \"MCQ\", // Could be \"MCQ\", \"True/False\", or \"Open-Ended\"\n    \"choices\": [\n      { \"option\": \"A\", \"text\": \"A constant variable that cannot be changed\" },\n      { \"option\": \"B\", \"text\": \"A block-scoped variable that can be reassigned\" },\n      { \"option\": \"C\", \"text\": \"A global variable\" },\n      { \"option\": \"D\", \"text\": \"None of the above\" }\n    ],\n    \"correct_answer\": \"A\",\n    \"points\": 10\n  }"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Quiz Collection"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "quiz_example = {\n  \"_id\": ObjectId(\"64a8...\"),\n  \"title\": \"JavaScript Fundamentals\",\n  \"category\": \"Programming\",\n  \"tags\": [\"JavaScript\", \"Basics\", \"Functions\"],\n  \"duration\": 15,  // in minutes\n  \"created_by\": ObjectId(\"64a7...\"),\n  \"questions\": [\n    { \"question_id\": 7134, \"order\": 1 },\n    { \"question_id\": 6243, \"order\": 2 }\n  ],\n  \"created_at\": ISODate(\"2024-02-22T10:10:00Z\")\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Response Collection"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "response_example = {\n    \"_id\": ObjectId(\"64b1...\"),\n    \"user_id\": 123,\n    \"quiz_id\": 1234,\n    \"submitted_at\": ISODate(\"2024-02-20T14:45:00Z\"),\n    \"answers\": [\n      { \"question_id\": 7364, \"selected_option\": \"A\", \"is_correct\": true },\n      { \"question_id\": 6214, \"selected_option\": \"C\", \"is_correct\": false }\n    ],\n    \"total_score\": 10\n  }"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        }
+    ]
+}

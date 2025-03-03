@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaURa6J3tCYA2P7Jqqc7mUQ4PF_YowqocMwu_qs8LjiQ&s" alt="Sitare University"></li>
+            <li>Home</li>
+            <li><a href="about.html">About</a></li>
+            <li>People</li>
+            <li>News</li>
+        </ul>
+        
+    </nav>
+    <p>We are living in unprecedented times, software has transformed how we live. From smartphones to smart wearables, from finding information to buying things, from banking to healthcare, from listening to music to driving a car, every aspect of our life is impacted by computers. This trend will only accelerate with the new age of AI and Machine Learning. The future belongs to nations who can make fundamental advances in Computer Science.</p>
+    <p>To ensure that the brightest minds in the world get an opportunity to study Computer Science, leaders from Silicon Valley, top American and European institutions, industry leaders, and venture capitalists have come together to build a new University focussed on Computer Science - Sitare University. The first Sitare batch will start this year. In 2022, Sitare University will admit upto FIFTY students. The students will be selected based upon their JEE performance, as well as an interview.</p>
+    
+    <div class="people">
+        <div class="coloum">
+            <div class="row">
+                <div class="text-center">
+                    <img src="https://sitare.org/univ/assets/WebP/amit-singhal.webp" alt="Amit-singhal">
+                    <!-- <h2>Amit-singhal</h2> -->
+                    <!-- <img src="https://sitare.org/univ/assets/WebP/anuja-agarwal.webp" alt="Anuja-agarwal"> -->
+                    <!-- <h2>Anuja-agarwal</h2> -->
+                    </div>
+                
+
+            </div>
+        </div>
+        
+          
+    
+        
+    </div>
+    <class class="name">
+        <h2>Amit-singhal</h2>
+        <br>
+        <!-- <h2>Anuja-agarwal</h2> -->
+    </class>
+    
+
+</body>
+</html>
